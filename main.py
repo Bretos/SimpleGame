@@ -19,6 +19,7 @@ import random
 import sys
 import time
 import datetime
+import os
 
 chances = 3
 minimum = 0
