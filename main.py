@@ -25,7 +25,7 @@ minimum = 0
 maximum = 0
 powitanie = "\nWelcome to this pretty easy game\nYour task is to guess the magic number(which is randomly generated) from following ranges\n(keep in mind that amount of your guesses is limited):\n"
 zakresy = "\n1. <0;15> Chances: 3\n2. <0;30> Chances: 3\n3. <0;50> Chances: 5\n4. Randomly generated range \n0. Change parameters\n-1. Quit"
-menu = "\nPlease, state your choice:"
+menu = "\nPlease, state your choice: "
 czas = 0.015
 
 
@@ -128,7 +128,7 @@ def gra():
     if chances <= 0:
         print "Sorry... out of chances :-("
         print "Your magic number was: ", MagicNumber, "!"
-    print "You played for:", (ending - beggining).seconds, "point", (ending - beggining).microseconds, " seconds"
+    print "You played for:", (ending - beggining).seconds, ".", ((ending - beggining).microseconds / 10000), " seconds"
     WannaStay()
 
 
