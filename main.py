@@ -117,13 +117,13 @@ def gra():
         sys.stdout.write("Take your guess: ")
         guess = int(raw_input())
         if guess == MagicNumber:
-            print "That's it! Congratulations, you guessed it!\n Your magic number is:", MagicNumber
+            print "That's it! Congratulations, you guessed it!\n Your magic number is: ", MagicNumber
             break
         if guess > MagicNumber:
-            print "Too much!"
+            print "Too much! "
             chances -= 1
         if guess < MagicNumber:
-            print "Not enough!"
+            print "Not enough! "
             chances -= 1
     ending = datetime.datetime.now()
     if chances <= 0:
